@@ -1,0 +1,141 @@
+📘 JavaScript Learning Log
+Started: 29 Oct 2025
+Last Updated: 31 Oct 2025
+Goal: Build strong JS fundamentals with practical examples
+
+
+29/Oct/2025
+Topic: Variable
+  
+Code: 
+    let age = 25;
+    let price = 10.99;
+    let gpa = 8.5;
+
+    console.log(`You are ${age} years old`);
+    console.log(`The price is $${price}`);
+    console.log(`Your gpa is : ${price}`);
+
+Explanation: declared variables and printed them in console ${} is used to print the variable's value
+  
+  
+Topic: Arithmetic Operator
+
+Code: 
+    let student = 30;
+
+    students = students + 1;    Addition
+    students = students - 1;    Substraction
+    students = students * 2;    Multiplication
+    students = students / 2;    Division
+    students = students ** 1;   rais to
+    students = students % 1;    Modules
+
+* Augmented Assignment Operator
+
+    Instead of students = students + 1; 
+    we could use students ++ ; 
+
+* Operator Precedence
+
+Code:
+    let result = 1 + 2 * 3 + 4 ** 2 ;
+    console.log(result);
+
+Explanation: So instead of 169 it will calculate its as 23 because it use the order of
+            1. Parenthsis
+            2. Exponents
+            3. Mul & Div & Modules
+            4. Add & Sub
+
+
+
+30/Oct/2025
+Topic: User Input
+
+Code: 
+    let username ;
+    username = window.prompt("What is your name?);
+    console.log(username);
+
+Explanation: it accepts user input using window pop up 
+
+Code: 
+    <h1 id="myH1">Welcome</h1>
+    <label>Username: </label>
+    <input id="myText"><br><br>
+    <button id="mySubmit">Submit</button>
+
+    let username;
+    document.getElementById("mySubmit").onclick = function(){
+      username = document.getElementById("myText").value;
+      document.getElementById("myH1").textContent = `Hello ${username}`;
+    }
+  
+
+
+31/Oct/2025
+Topic: Type Conversion
+
+Code:
+    let age = window.prompt("How old are you?");
+    age = Number(age);
+    age +=1;
+    console.log(age, typeof age);
+
+Explanation: Ask the user for the age using window prompt ,the age is stored in age variable then it is converted to Number using number function then its add's 1 values to it then print's it in console.
+
+Code: 
+    let x = "Shaikh";
+    let y = "Shaikh";
+    let z = "Shaikh";
+
+    x = Number(x);
+    y = String(y);
+    z = Boolean(z);
+
+    console.log(x, typeof x);
+    console.log(y, typeof y);
+    console.log(z, typeof z);
+
+Explanation: there are 3 variables x, y and z all are string's then each of them are converted to a different types of data type then it is printed in console 
+x is string it is converted to Number we get NaN(not a number) and it's data type which is Number
+y is string it is converted to string we get Shaikh and it's data type which is string
+z is string it is converted to Boolean we get true and it's data type which is Boolean, if we did put any value to it then it will show false
+
+
+Topic: Constants
+
+Code:
+    const PI = 3.14159;
+    let radius ;
+    let circumference;
+
+    radius = window.prompt("Enter the radius of the circle ?");
+    radius = Number(radius);
+
+    circumference = 2 * PI * radius;
+
+    console.log(circumference);
+
+Explanation: by declaring const it make the value Constant so it would be changed later in the code, radius and circumference is declared the we ask for the input using window prompt then convert it into number the apply the formula and print it.
+
+Code:
+    <h1>Welcome</h1>
+    <label for="">Enter radius: </label>
+    <input type="text" id="myText"><br><br>
+    <button id="mySubmit">Submit</button>
+    <h3 id="myH3"></h3>
+
+    const PI = 3.14159;
+    let radius ;
+    let circumference;
+
+    document.getElementById("mySubmit").onclick = function(){
+    radius = document.getElementById("myText").value ;
+    radius = Number(radius);
+    circumference = 2 * PI * radius;
+    document.getElementById("myH3").textContent = circumference + " cm" ;
+    }
+
+Explanation: we have declared const PI the radius and circumference then using document get element by id onclick function the same process is repeated but in this instead of displaying the answer in console it shows the answer in the document
