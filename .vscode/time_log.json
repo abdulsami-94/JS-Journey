@@ -10,5 +10,93 @@
         "timeSpent": 2700
       }
     ]
+  },
+  "03_JavaScript": {
+    "index.html.git": [
+      {
+        "date": "2025-11-02T11:55:49.537Z",
+        "user": {
+          "name": "Abdul Sami Shaikh",
+          "email": "abdulsamishaikh232@gmail.com"
+        },
+        "timeSpent": 5
+      },
+      {
+        "date": "2025-11-03T05:44:44.479Z",
+        "user": {
+          "name": "Abdul Sami Shaikh",
+          "email": "abdulsamishaikh232@gmail.com"
+        },
+        "timeSpent": 5
+      }
+    ],
+    "script.js.git": [
+      {
+        "date": "2025-11-02T11:58:16.749Z",
+        "user": {
+          "name": "Abdul Sami Shaikh",
+          "email": "abdulsamishaikh232@gmail.com"
+        },
+        "timeSpent": 120
+      },
+      {
+        "date": "2025-11-02T11:58:35.774Z",
+        "user": {
+          "name": "Abdul Sami Shaikh",
+          "email": "abdulsamishaikh232@gmail.com"
+        },
+        "timeSpent": 19
+      },
+      {
+        "date": "2025-11-02T12:04:31.422Z",
+        "user": {
+          "name": "Abdul Sami Shaikh",
+          "email": "abdulsamishaikh232@gmail.com"
+        },
+        "timeSpent": 356
+      },
+      {
+        "date": "2025-11-03T04:18:57.189Z",
+        "user": {
+          "name": "Abdul Sami Shaikh",
+          "email": "abdulsamishaikh232@gmail.com"
+        },
+        "timeSpent": 2
+      },
+      {
+        "date": "2025-11-03T04:22:55.506Z",
+        "user": {
+          "name": "Abdul Sami Shaikh",
+          "email": "abdulsamishaikh232@gmail.com"
+        },
+        "timeSpent": 62
+      }
+    ],
+    "javascript_log.txt.git": [
+      {
+        "date": "2025-11-02T13:22:05.589Z",
+        "user": {
+          "name": "Abdul Sami Shaikh",
+          "email": "abdulsamishaikh232@gmail.com"
+        },
+        "timeSpent": 112
+      },
+      {
+        "date": "2025-11-02T13:22:58.995Z",
+        "user": {
+          "name": "Abdul Sami Shaikh",
+          "email": "abdulsamishaikh232@gmail.com"
+        },
+        "timeSpent": 53
+      },
+      {
+        "date": "2025-11-02T13:24:07.281Z",
+        "user": {
+          "name": "Abdul Sami Shaikh",
+          "email": "abdulsamishaikh232@gmail.com"
+        },
+        "timeSpent": 68
+      }
+    ]
   }
 }
