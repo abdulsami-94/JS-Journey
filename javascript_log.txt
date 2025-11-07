@@ -17,7 +17,8 @@ Code:
     console.log(`Your gpa is : ${price}`);
 
 Explanation: declared variables and printed them in console ${} is used to print the variable's value
-  
+
+
   
 Topic: Arithmetic Operator
 
@@ -38,6 +39,7 @@ Code:
 
 * Operator Precedence
 
+
 Code:
     let result = 1 + 2 * 3 + 4 ** 2 ;
     console.log(result);
@@ -50,6 +52,7 @@ Explanation: So instead of 169 it will calculate its as 23 because it use the or
 
 
 
+
 30/Oct/2025
 Topic: User Input
 
@@ -59,6 +62,7 @@ Code:
     console.log(username);
 
 Explanation: it accepts user input using window pop up 
+
 
 Code: 
     <h1 id="myH1">Welcome</h1>
@@ -74,6 +78,7 @@ Code:
   
 
 
+
 31/Oct/2025
 Topic: Type Conversion
 
@@ -84,6 +89,8 @@ Code:
     console.log(age, typeof age);
 
 Explanation: Ask the user for the age using window prompt ,the age is stored in age variable then it is converted to Number using number function then its add's 1 values to it then print's it in console.
+
+
 
 Code: 
     let x = "Shaikh";
@@ -104,6 +111,7 @@ y is string it is converted to string we get Shaikh and it's data type which is 
 z is string it is converted to Boolean we get true and it's data type which is Boolean, if we did put any value to it then it will show false
 
 
+
 Topic: Constants
 
 Code:
@@ -119,6 +127,7 @@ Code:
     console.log(circumference);
 
 Explanation: by declaring const it make the value Constant so it would be changed later in the code, radius and circumference is declared the we ask for the input using window prompt then convert it into number the apply the formula and print it.
+
 
 Code:
     <h1>Welcome</h1>
@@ -139,6 +148,7 @@ Code:
     }
 
 Explanation: we have declared const PI the radius and circumference then using document get element by id onclick function the same process is repeated but in this instead of displaying the answer in console it shows the answer in the document
+
 
 
 
@@ -174,3 +184,88 @@ Code:
 
 Explanation: Math is a build in object that prvides a collection of properties and methods
 like finding the max and min or round up of a number 
+
+
+
+
+05/Nov/2025
+Topic: if-else
+
+Code:   
+let age = 19 ;
+    if (age >= 18) {
+        console.log("Yor can see this site");
+    } else {
+       console.log("Close it boy!!");
+    }
+
+Explanation: using the if else we can execute the code on the basic of the condition if its true then run this if not then this
+
+
+Code:
+const myText = document.getElementById("myText");
+const mySubmit = document.getElementById("mySubmit");
+const answer = document.getElementById("answer");
+
+let age ;
+mySubmit.onclick = function() {
+    age = myText.value;
+    age = Number(age);
+
+    if (age >= 18) {
+        answer.textContent = (`You can see this site`);
+    } else {
+        answer.textContent = (`You cannnot see this site`);    }
+    }
+
+Explanation: there is a text box where the user will enter the age and submit by using the onclick function we check the age of the user and give the answer according to it
+
+
+
+Topic: Checked Property
+
+Code:
+    <input type="checkbox" id="myCheckBox">
+    <label for="myCheckBox">Suscribe to my NewsLetter</label><br><br>
+
+    <input type="radio" id="visaBtn" name="button" >
+    <label for="visaBtn">Visa</label><br>
+
+    <input type="radio" id="masterCardBtn" name="button">
+    <label for="masterCardBtn">Master Card</label><br>
+
+    <input type="radio" id="payPalBtn" name="button">
+    <label for="payPalBtn">PayPal</label><br><br>
+
+    <button type="submit" id="mySubmit">Submit</button>
+    <p id="subReport"></p>
+    <p id="payResult"></p>
+
+
+const myCheckBox = document.getElementById("myCheckBox");
+const visaBtn = document.getElementById("visaBtn");
+const masterCardBtn = document.getElementById("masterCardBtn");
+const payPalBtn = document.getElementById("payPalBtn");
+const mySubmit = document.getElementById("mySubmit");
+const subReport = document.getElementById("subReport");
+const payResult = document.getElementById("payResult");
+
+mySubmit.onclick = function () {
+    if(myCheckBox.checked) {
+        subReport.textContent = (`You have Subcribed`);
+    } else {
+        subReport.textContent = (`You haven't Subscribe`)
+    }
+
+    if (visaBtn.checked) {
+        payResult.textContent = (`You are paying using VISA`);
+    } else if (masterCardBtn.checked) {
+        payResult.textContent = (`You are paying using MASTERCARD`);
+    } else if (payPalBtn.checked) {
+        payResult.textContent = (`You are paying using PAYPAL`);
+    } else {
+        payResult.textContent = (`You haven't selected a payment method`);
+    }
+}
+
+Explanation: there is a check box and a 3 radio button and a empty paragraph to display answer using if else and else if we can show different kind of answers

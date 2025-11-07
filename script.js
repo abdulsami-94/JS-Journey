@@ -1,24 +1,25 @@
-let a = 10;
-let b = 20;
-let c = 30;
-let d = 30.31;
-let e = 30.99;
-let f = 0;
-let g = 0;
-let x = 0;
-let y =0;
-let z =0;
+const myCheckBox = document.getElementById("myCheckBox");
+const visaBtn = document.getElementById("visaBtn");
+const masterCardBtn = document.getElementById("masterCardBtn");
+const payPalBtn = document.getElementById("payPalBtn");
+const mySubmit = document.getElementById("mySubmit");
+const subReport = document.getElementById("subReport");
+const payResult = document.getElementById("payResult");
 
-let max = Math.max(a, b, c);
-let min = Math.min(a, b, c);
-let k
-k = Math.ceil(d);
-let j
-j = Math.floor(e);
-let o
-o = Math.trunc(e);
-console.log (`The Max is ${max}`);
-console.log (`The Min is ${min}`);
-console.log (`The round up is ${k}`)
-console.log (`The round down is ${j}`)
-console.log(`the trunc is ${o}`);
+mySubmit.onclick = function () {
+    if(myCheckBox.checked) {
+        subReport.textContent = (`You have Subcribed`);
+    } else {
+        subReport.textContent = (`You haven't Subscribe`)
+    }
+
+    if (visaBtn.checked) {
+        payResult.textContent = (`You are paying using VISA`);
+    } else if (masterCardBtn.checked) {
+        payResult.textContent = (`You are paying using MASTERCARD`);
+    } else if (payPalBtn.checked) {
+        payResult.textContent = (`You are paying using PAYPAL`);
+    } else {
+        payResult.textContent = (`You haven't selected a payment method`);
+    }
+}
