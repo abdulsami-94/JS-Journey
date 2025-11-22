@@ -3,6 +3,11 @@ Started: 29 Oct 2025
 Last Updated: 31 Oct 2025
 Goal: Build strong JS fundamentals with practical examples
 
+what i learned
+what confused me
+what mistake i made
+how i fixed it
+
 
 29/Oct/2025
 Topic: Variable
@@ -360,3 +365,29 @@ console.log(userName);
 console.log(extension);
 
 Explanation: by using .slice we can cut the sting to our desire amount of length here using 0, 5 we cut the string from the index of 0-5 
+
+
+
+
+22/Nov/2025
+Topic: Array
+
+Explanation : A place to hold multiple variable of same data types
+
+Aha movement : To print a single element from a array we use its index number
+Code : console.log(fruits[0]);
+
+Problem : Had a problem while printing the array elements
+
+Solution : Solved using index number
+
+
+Topic : Objects
+
+Explanation : To store multiple types of date type under a single name like student details or empolye details 
+
+Aha movement : ig we can use it to user's details
+
+Problem : Had problem declaring the Object name
+
+Solution : Easy just had to put "=" after the object name 
